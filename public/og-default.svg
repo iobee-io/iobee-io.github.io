@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0F1728"/>
+  <rect x="40" y="40" width="1120" height="550" rx="26" fill="#172344" stroke="#2D3F74"/>
+  <circle cx="150" cy="130" r="60" fill="#5C77FF" fill-opacity="0.35"/>
+  <circle cx="1080" cy="520" r="84" fill="#78E0BC" fill-opacity="0.28"/>
+  <text x="90" y="255" fill="#EAF0FF" font-size="72" font-family="Arial, sans-serif" font-weight="700">iobee V3</text>
+  <text x="90" y="330" fill="#AFC2FF" font-size="38" font-family="Arial, sans-serif">Plataforma SaaS Industrial em Tempo Real</text>
+  <rect x="90" y="388" width="260" height="56" rx="14" fill="#5C77FF"/>
+  <text x="118" y="426" fill="#F3F7FF" font-size="26" font-family="Arial, sans-serif">Agendar demo</text>
+</svg>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iobee.io/sitemap.xml
+Host: iobee.io
