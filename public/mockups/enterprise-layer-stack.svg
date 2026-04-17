@@ -1,0 +1,110 @@
+<svg width="1920" height="860" viewBox="0 0 1920 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1780" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A152D" />
+      <stop offset="1" stop-color="#102443" />
+    </linearGradient>
+    <linearGradient id="layerCloud" x1="280" y1="0" x2="1560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#234B7B" />
+      <stop offset="1" stop-color="#2F5F91" />
+    </linearGradient>
+    <linearGradient id="layerIntel" x1="280" y1="0" x2="1560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F436F" />
+      <stop offset="1" stop-color="#295685" />
+    </linearGradient>
+    <linearGradient id="layerCore" x1="280" y1="0" x2="1560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A3A64" />
+      <stop offset="1" stop-color="#24507C" />
+    </linearGradient>
+    <linearGradient id="layerEdge" x1="280" y1="0" x2="1560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173153" />
+      <stop offset="1" stop-color="#1F436E" />
+    </linearGradient>
+    <linearGradient id="layerField" x1="280" y1="0" x2="1560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142A47" />
+      <stop offset="1" stop-color="#1B3B60" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="860" rx="30" fill="url(#bg)" />
+  <rect x="38" y="28" width="1844" height="804" rx="28" fill="#0E1C33" stroke="#2D466E" />
+
+  <text x="108" y="110" fill="#E2EBFF" font-family="Space Grotesk, Arial" font-size="46">Arquitetura unica da iobee</text>
+  <text x="108" y="154" fill="#A8BCDF" font-family="IBM Plex Sans, Arial" font-size="23">Bees capturam no campo, Pollen transporta sinais, Hive orquestra e ICOS gera inteligencia operacional.</text>
+  <text x="108" y="184" fill="#92E6D1" font-family="IBM Plex Sans, Arial" font-size="18">Guard atua de forma transversal protegendo todas as camadas.</text>
+
+  <g>
+    <rect x="250" y="212" width="1308" height="86" rx="16" fill="url(#layerCloud)" stroke="#7BC5F4" />
+    <text x="286" y="246" fill="#BEE8FF" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">CLOUD LAYER</text>
+    <text x="286" y="278" fill="#ECF8FF" font-family="IBM Plex Sans, Arial" font-size="21">Aplicacoes operacionais | APIs corporativas | Integracoes globais | Consumo de inteligencia</text>
+  </g>
+
+  <g>
+    <rect x="250" y="316" width="1308" height="86" rx="16" fill="url(#layerIntel)" stroke="#86DCC4" />
+    <text x="286" y="350" fill="#B6F2DD" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">INTELLIGENCE LAYER</text>
+    <text x="286" y="382" fill="#EEFFF9" font-family="IBM Plex Sans, Arial" font-size="21">ICOS: Device Twin | Asset Twin | Correlacao | Predicao | Recomendacao operacional</text>
+  </g>
+
+  <g>
+    <rect x="250" y="420" width="1308" height="86" rx="16" fill="url(#layerCore)" stroke="#8EA6F5" />
+    <text x="286" y="454" fill="#CCD8FF" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">CORE LAYER</text>
+    <text x="286" y="486" fill="#F2F5FF" font-family="IBM Plex Sans, Arial" font-size="21">Hive: Ingestao | Roteamento | Persistencia | Regras | Alarmes | APIs | Multi-tenant</text>
+  </g>
+
+  <g>
+    <rect x="250" y="524" width="1308" height="86" rx="16" fill="url(#layerEdge)" stroke="#6B97C9" />
+    <text x="286" y="558" fill="#ADD4FF" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">EDGE LAYER</text>
+    <text x="286" y="590" fill="#DEEEFF" font-family="IBM Plex Sans, Arial" font-size="21">Node-RED | APIs | MQTT | OPC-UA | Modbus | BACnet | LoRaWAN | Drivers</text>
+  </g>
+
+  <g>
+    <rect x="250" y="628" width="1308" height="86" rx="16" fill="url(#layerField)" stroke="#5F83BD" />
+    <text x="286" y="662" fill="#AFC6FF" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">FIELD LAYER</text>
+    <text x="286" y="694" fill="#DFEAFF" font-family="IBM Plex Sans, Arial" font-size="21">Bees + Pollen na origem: Sensores | CLPs | Maquinas | Inversores | Medidores | IoT | Edge gateways</text>
+  </g>
+
+  <g stroke="#81B6F7" stroke-width="2.8" stroke-linecap="round" opacity="0.94">
+    <path d="M906 628V610" />
+    <path d="M906 524V506" />
+    <path d="M906 420V402" />
+    <path d="M906 316V298" />
+    <path d="M898 312L906 298L914 312" />
+    <path d="M898 416L906 402L914 416" />
+    <path d="M898 520L906 506L914 520" />
+    <path d="M898 624L906 610L914 624" />
+  </g>
+
+  <g>
+    <rect x="1584" y="212" width="214" height="502" rx="20" fill="#163653" stroke="#6ED9C1" />
+    <text x="1691" y="248" fill="#9CEED8" font-family="IBM Plex Sans, Arial" font-size="20" text-anchor="middle">GUARD</text>
+    <text x="1691" y="272" fill="#8EE1CB" font-family="IBM Plex Sans, Arial" font-size="13" text-anchor="middle">TRANSVERSAL</text>
+
+    <rect x="1606" y="304" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="328" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">RBAC</text>
+
+    <rect x="1606" y="354" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="378" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">Auditoria</text>
+
+    <rect x="1606" y="404" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="428" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">SSO</text>
+
+    <rect x="1606" y="454" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="478" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">Compliance</text>
+
+    <rect x="1606" y="504" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="528" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">Criptografia</text>
+
+    <rect x="1606" y="554" width="170" height="38" rx="9" fill="#1A4161" stroke="#6ED9C1" />
+    <text x="1691" y="578" fill="#DFFFF6" font-family="IBM Plex Sans, Arial" font-size="14" text-anchor="middle">Rastreabilidade</text>
+  </g>
+
+  <g stroke="#68D9C0" stroke-width="2" stroke-dasharray="6 6" opacity="0.75">
+    <path d="M1558 255H1584" />
+    <path d="M1558 359H1584" />
+    <path d="M1558 463H1584" />
+    <path d="M1558 567H1584" />
+    <path d="M1558 671H1584" />
+  </g>
+
+  <text x="930" y="776" fill="#A5BDDF" font-family="IBM Plex Sans, Arial" font-size="19" text-anchor="middle">Fluxo em camadas: Field -> Edge -> Hive -> ICOS -> Cloud | Guard protegendo tudo ao mesmo tempo</text>
+</svg>

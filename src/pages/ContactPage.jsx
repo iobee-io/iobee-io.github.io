@@ -5,7 +5,7 @@ import { PageSeo } from "../components/seo/PageSeo";
 import { SectionContainer } from "../components/ui/SectionContainer";
 import { trackEvent } from "../lib/analytics";
 
-const WHATSAPP_URL = "https://wa.me/5511999999999";
+const WHATSAPP_URL = "https://wa.me/5519988148242";
 const LEADS_ENDPOINT = import.meta.env.VITE_LEADS_ENDPOINT || "/api/leads";
 
 const segments = [
@@ -47,8 +47,8 @@ export default function ContactPage() {
   const breadcrumbItems = [{ name: "Contato", path: "/contato" }];
 
   const contacts = [
-    { title: "Email", value: "contato@iobee.io", icon: AtSymbolIcon, href: "mailto:contato@iobee.io" },
-    { title: "WhatsApp", value: "+55 (11) 99999-9999", icon: PhoneIcon, href: WHATSAPP_URL },
+    { title: "Email", value: "comercial@iobee.io", icon: AtSymbolIcon, href: "mailto:comercial@iobee.io" },
+    { title: "WhatsApp", value: "(19) 98814-8242", icon: PhoneIcon, href: WHATSAPP_URL },
     { title: "Comercial", value: "Sao Paulo + atendimento nacional", icon: BuildingOffice2Icon, href: null },
   ];
 
