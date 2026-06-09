@@ -10,37 +10,37 @@ import { trackEvent } from "../lib/analytics";
 const architectureFlow = [
   {
     name: "Bees",
-    tagline: "Camada de campo e captura de origem",
-    description: "Operadores de campo digitais que conectam o mundo fisico a arquitetura iobee.",
+    tagline: "Interfaces inteligentes de campo",
+    description: "Capturam sinais industriais de ativos, maquinas, sensores, medidores e eventos operacionais.",
     icon: "bees",
     linkTo: "#arquitetura-iobee",
-    proof: ["Sensores, CLPs, maquinas, inversores, medidores", "Edge gateways, APIs, Node-RED e protocolos industriais", "Sem Bees nao existe entrada de dados"],
+    proof: ["Sensores, CLPs, maquinas, inversores e medidores", "Protocolos industriais, APIs e gateways edge", "Base confiavel para contexto operacional"],
   },
   {
-    name: "Pollen",
-    tagline: "Dado industrial em movimento continuo",
-    description: "Sinais, eventos e estados trafegando em tempo real entre fontes, processos e regras.",
-    icon: "pollen",
-    linkTo: "#arquitetura-iobee",
-    proof: ["Telemetria, variaveis, alarmes, eventos e payloads", "Dados energeticos, logs, comandos e historico operacional", "Materia-prima para inteligencia operacional"],
-  },
-  {
-    name: "Hive",
-    tagline: "Nucleo operacional da plataforma",
-    description: "Infraestrutura que recebe, processa, persiste, distribui e orquestra todo o Pollen.",
+    name: "Hive / Edge",
+    tagline: "Processamento local e conectividade",
+    description: "Processa, normaliza e conecta dados localmente para manter a operacao resiliente perto do processo.",
     icon: "hive",
+    linkTo: "#arquitetura-iobee",
+    proof: ["Operacao com internet instavel", "Buffer, normalizacao e roteamento local", "Conexao entre campo, edge e cloud"],
+  },
+  {
+    name: "Guard + HEXos",
+    tagline: "Governanca e sistema operacional industrial",
+    description: "Protege acesso, organiza dados, ativos, usuarios e tenants para operacao enterprise.",
+    icon: "guard",
     linkTo: "#arquitetura-camadas",
     emphasis: true,
-    proof: ["Ingestao, roteamento, normalizacao e persistencia", "APIs, regras, alarmes, automacao e gestao de dispositivos", "Multi-tenant e white-label com escalabilidade enterprise"],
+    proof: ["Acesso seguro, auditoria e criptografia", "Dados, ativos, usuarios e permissoes", "Multi-tenant e governanca enterprise"],
   },
   {
-    name: "ICOS",
-    tagline: "Inteligencia operacional contextual",
-    description: "Motor de cognicao que transforma dados brutos em diagnostico, predicao e recomendacao.",
+    name: "ICOS + Advisor",
+    tagline: "Interpretacao e recomendacao operacional",
+    description: "Interpreta comportamento, compara contra baseline contextual e orienta proximas acoes.",
     icon: "icos",
     linkTo: "#digital-twin-operacional",
     emphasis: true,
-    proof: ["Device Twin, Asset Twin e relacao entre ativos", "Correlacao de eventos, causa raiz, IA e insights", "Antecipa o que pode acontecer e indica o que deve ser feito"],
+    proof: ["Device Twin, Asset Twin e estados operacionais", "Baseline, desvios e instabilidade recorrente", "Recomendacoes explicaveis para decisao"],
   },
 ];
 
@@ -55,10 +55,10 @@ const architectureLayers = [
   {
     id: "intelligence",
     name: "Intelligence Layer",
-    label: "Analise e previsao",
+    label: "Interpretacao operacional",
     icon: "intelligence",
     featured: "ICOS",
-    items: ["ICOS", "Asset Twin", "Device Twin", "Analytics", "IA", "Insights", "Manutencao preditiva", "Eficiencia operacional"],
+    items: ["ICOS", "Asset Twin", "Device Twin", "Baseline", "Estados", "Desvios", "Advisor", "Eficiencia operacional"],
   },
   {
     id: "core",
@@ -93,9 +93,9 @@ const guardTransversal = {
 const twinCapabilities = [
   "Device Twin com estado vivo por dispositivo",
   "Asset Twin com relacao entre ativos e processos",
-  "Historico operacional para diagnostico de causa raiz",
+  "Historico operacional para baseline contextual",
   "Alarmes inteligentes com contexto da operacao",
-  "IA aplicada para detectar desvios e predizer falhas",
+  "Regras explicaveis para detectar desvio e degradacao",
 ];
 
 const twinAssets = [
@@ -119,16 +119,16 @@ const platformCapabilities = [
   "Historico e tendencias",
   "Regras e automacoes",
   "Usuarios e permissoes",
-  "Aplicativo responsivo",
+  "Governanca operacional",
   "Integracao com ERPs e MES",
-  "IA e recomendacoes",
+  "Advisor e recomendacoes",
   "Inteligencia energetica",
   "Telemetria e rastreabilidade",
 ];
 
 const comparison = {
   generic: [
-    "Apenas dashboards",
+    "Apenas telas passivas",
     "Integracoes limitadas",
     "Sem contexto operacional",
     "Sem digital twin",
@@ -156,7 +156,7 @@ const strategicPillars = [
   {
     name: "ICOS",
     label: "Cognicao operacional",
-    details: "Transforma sinais dispersos em entendimento acionavel, predicao de falhas e priorizacao de resposta.",
+    details: "Transforma sinais dispersos em baseline, estados, desvios e priorizacao de resposta.",
   },
   {
     name: "Guard",
@@ -166,7 +166,7 @@ const strategicPillars = [
 ];
 
 const inferenceExample =
-  "O compressor da linha 3 opera acima da media ha 6 horas, com aumento simultaneo de consumo e vibracao, indicando possivel falha iminente de rolamento.";
+  "A Bomba ETA #02 saiu do baseline de RUNNING_STABLE por 7 minutos, com oscilacao simultanea de vazao, pH e consumo.";
 
 function trackPlatformEvent(eventName, payload = {}) {
   trackEvent(eventName, { context: "platform_page", ...payload });
@@ -300,21 +300,21 @@ export default function PlatformPage() {
               Plataforma operacional industrial
             </p>
             <h1 className="section-title font-display text-4xl font-semibold md:text-5xl lg:text-6xl">
-              Da coleta de dados a inteligencia operacional em tempo real
+              Da captura de sinais à decisão operacional contextual
             </h1>
             <p className="mt-5 max-w-2xl text-base text-base-content/78 md:text-lg">
-              A iobee conecta equipamentos, dados, ativos, pessoas e decisoes em uma unica arquitetura industrial escalavel.
+              A Iobee conecta campo, edge, governanca, Asset Twin, baseline e Advisor Operacional em uma arquitetura industrial escalavel.
             </p>
             <p className="mt-3 max-w-2xl text-sm font-medium uppercase tracking-[0.14em] text-base-content/58">
-              Nao e apenas monitoramento: e orquestracao + cognicao + governanca operacional
+              Nao e uma tela passiva: e contexto + estados + governanca operacional
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 className="btn btn-primary soft-glow"
-                onClick={() => trackPlatformEvent("cta_agendar_demonstracao_click", { section: "platform_hero" })}
+                onClick={() => trackPlatformEvent("cta_agendar_diagnostico_click", { section: "platform_hero" })}
                 to="/contato"
               >
-                Agendar demonstracao
+                Agendar diagnóstico operacional
                 <ArrowRightIcon className="size-4" />
               </Link>
               <a
@@ -340,8 +340,8 @@ export default function PlatformPage() {
                   </div>
                   <div className="rounded-2xl border border-primary/30 bg-primary/10 px-4 py-3">
                     <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-primary/85">Pipeline proprietario</p>
-                    <p className="mt-1 font-display text-lg text-base-content">Bees -&gt; Pollen -&gt; Hive -&gt; ICOS</p>
-                    <p className="mt-1 text-xs text-base-content/66">Guard transversal protegendo todas as camadas e fluxos.</p>
+                    <p className="mt-1 font-display text-lg text-base-content">Field -&gt; Bees -&gt; Hive/Edge -&gt; Guard -&gt; HEXos -&gt; ICOS -&gt; Advisor</p>
+                    <p className="mt-1 text-xs text-base-content/66">Seguranca, contexto e interpretacao operacional em uma unica arquitetura.</p>
                   </div>
                 </div>
               </div>
@@ -373,7 +373,7 @@ export default function PlatformPage() {
               <span className="inline-flex items-center rounded-full border border-accent/42 bg-accent/12 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                 Guard transversal
               </span>
-              <span className="text-base-content/78">RBAC, auditoria, permissao, SSO, compliance e criptografia protegendo Bees, Pollen, Hive e ICOS.</span>
+              <span className="text-base-content/78">RBAC, auditoria, permissao, SSO, compliance e criptografia protegendo Bees, Hive, HEXos, ICOS e Advisor.</span>
             </div>
           </motion.div>
         </MotionReveal>
@@ -614,7 +614,7 @@ export default function PlatformPage() {
                 </div>
                 <div className="mt-3 rounded-xl border border-primary/28 bg-primary/10 p-3">
                   <p className="text-xs uppercase tracking-[0.16em] text-primary/82">Saida operacional</p>
-                  <p className="mt-1 text-sm text-base-content/80">Diagnostico + predicao + recomendacao de acao orientada por contexto.</p>
+                  <p className="mt-1 text-sm text-base-content/80">Baseline + estados + desvio + recomendacao de acao orientada por contexto.</p>
                 </div>
               </div>
 
@@ -765,10 +765,10 @@ export default function PlatformPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   className="btn btn-neutral"
-                  onClick={() => trackPlatformEvent("cta_solicitar_demonstracao_click", { section: "final_cta" })}
+                  onClick={() => trackPlatformEvent("cta_agendar_diagnostico_click", { section: "final_cta" })}
                   to="/contato"
                 >
-                  Solicitar demonstracao
+                  Agendar diagnóstico operacional
                 </Link>
                 <Link
                   className="btn btn-outline border-primary-content/30 text-primary-content hover:bg-primary-content/10"

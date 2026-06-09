@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 
 const footerLinks = [
   { label: "Plataforma", path: "/plataforma" },
-  { label: "OEM / White-label", path: "/oem" },
-  { label: "Segmentos", path: "/segmentos" },
   { label: "Casos de Uso", path: "/casos-de-uso" },
   { label: "Sobre", path: "/sobre" },
   { label: "Blog", path: "/blog" },
@@ -20,10 +18,10 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 md:px-8 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <p className="font-display text-xl font-semibold">
-            iobee <span className="text-primary">V3</span>
+            iobee
           </p>
           <p className="mt-2 max-w-md text-sm text-base-content/70">
-            Plataforma SaaS industrial para conectar ativos fisicos a decisoes operacionais em tempo real.
+            Plataforma industrial edge-native para transformar sinais de chão de fábrica em decisões operacionais acionáveis.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-x-8 gap-y-2 md:grid-cols-4">

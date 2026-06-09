@@ -17,7 +17,7 @@ export function Navbar({ theme = "dark", onToggleTheme }) {
     <header className="sticky top-0 z-50 border-b border-base-content/10 top-nav-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
         <Link className="font-display text-xl font-semibold tracking-tight" to="/">
-          iobee <span className="text-primary">V3</span>
+          iobee
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -48,10 +48,10 @@ export function Navbar({ theme = "dark", onToggleTheme }) {
           </a>
           <Link
             className="btn btn-primary"
-            onClick={() => trackEvent("cta_agendar_demonstracao_click", { context: "navbar" })}
+            onClick={() => trackEvent("cta_agendar_diagnostico_click", { context: "navbar" })}
             to="/contato"
           >
-            Agendar demonstracao
+            Agendar diagnóstico
           </Link>
         </div>
 
@@ -98,12 +98,12 @@ export function Navbar({ theme = "dark", onToggleTheme }) {
               <Link
                 className="btn btn-primary btn-sm"
                 onClick={() => {
-                  trackEvent("cta_agendar_demonstracao_click", { context: "navbar_mobile" });
+                  trackEvent("cta_agendar_diagnostico_click", { context: "navbar_mobile" });
                   setIsOpen(false);
                 }}
                 to="/contato"
               >
-                Agendar demonstracao
+                Agendar diagnóstico
               </Link>
             </div>
           </div>

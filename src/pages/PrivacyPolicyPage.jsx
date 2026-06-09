@@ -9,7 +9,7 @@ const sections = [
   {
     heading: "Finalidade",
     content:
-      "Utilizamos os dados para responder solicitacoes, agendar demonstracoes, qualificar oportunidades e melhorar o site. Nao comercializamos dados pessoais.",
+      "Utilizamos os dados para responder solicitacoes, agendar diagnosticos operacionais, qualificar oportunidades e melhorar o site. Nao comercializamos dados pessoais.",
   },
   {
     heading: "Compartilhamento e armazenamento",

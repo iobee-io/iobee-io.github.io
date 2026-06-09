@@ -28,7 +28,7 @@ export function ScaleSection() {
       <SectionHeading
         eyebrow="Escalabilidade"
         title="Comece com 10 sensores. Escale para milhares de ativos."
-        description="A iobee V3 foi desenhada para crescer junto com sua operacao, mantendo desempenho, confiabilidade e governanca."
+        description="A Iobee foi desenhada para crescer junto com sua operacao, mantendo desempenho, confiabilidade, contexto e governanca."
       />
 
       <div className="mt-8 grid gap-4 lg:grid-cols-3">

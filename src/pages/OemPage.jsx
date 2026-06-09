@@ -5,14 +5,14 @@ export default function OemPage() {
     <SimplePageTemplate
       badge="OEM / White-label"
       bullets={[
-        "Sua marca em toda experiencia do produto.",
-        "Subdominio proprio por cliente e tenant.",
-        "Dashboards e pacotes customizados por vertical.",
-        "Modelo de receita recorrente para canais e OEMs.",
+        "Sua marca em uma camada operacional segura para clientes industriais.",
+        "Tenant, governanca e segregacao por cliente ou unidade.",
+        "Pacotes por vertical com Asset Twin, baseline e Advisor Operacional.",
+        "Modelo recorrente para suporte, acompanhamento e servicos digitais.",
       ]}
-      description="Mostre o modelo de partnership para OEMs e integradores que desejam escalar servicos digitais com sua propria marca."
+      description="Modelo de parceria para OEMs e integradores que precisam transformar base instalada em servico recorrente orientado por contexto operacional."
       path="/oem"
-      title="White-label para OEM e Integradores"
+      title="Operational Intelligence white-label para OEM e integradores"
     />
   );
 }

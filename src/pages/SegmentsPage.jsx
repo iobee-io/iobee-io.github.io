@@ -5,14 +5,14 @@ export default function SegmentsPage() {
     <SimplePageTemplate
       badge="Segmentos"
       bullets={[
-        "Industria de processo e manufatura discreta.",
-        "HVAC, facilities e utilities.",
-        "Agua e saneamento com operacao distribuida.",
-        "Agro, alimentos e bebidas com rastreabilidade operacional.",
+        "Papel e celulose, quimico, utilidades e saneamento.",
+        "Operacoes continuas com ativos criticos e alta variabilidade.",
+        "Dosagem quimica, bombas, ETA, ETE, vazao, pressao, pH e consumo.",
+        "Processos onde estabilidade, disponibilidade e perda precisam de contexto.",
       ]}
-      description="Estruture estudos por segmento com desafios, indicadores e como a plataforma entrega valor operacional em cada contexto."
+      description="A Iobee atende operacoes industriais em que sinais existentes precisam virar baseline contextual, estados operacionais e decisao acionavel."
       path="/segmentos"
-      title="Solucoes por Segmento"
+      title="Segmentos industriais com variabilidade operacional"
     />
   );
 }

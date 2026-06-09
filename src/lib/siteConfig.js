@@ -1,8 +1,8 @@
 export const SITE_URL = "https://iobee.io";
-export const SITE_NAME = "iobee V3";
-export const DEFAULT_TITLE = "iobee V3 | Plataforma SaaS Industrial em Tempo Real";
+export const SITE_NAME = "Iobee";
+export const DEFAULT_TITLE = "Iobee | Operational Decision Intelligence Industrial";
 export const DEFAULT_DESCRIPTION =
-  "Plataforma SaaS industrial para monitoramento em tempo real, Device Twin, Asset Twin, alertas inteligentes e escala multi-planta.";
+  "Plataforma industrial edge-native de Operational Decision Intelligence para baseline contextual, Asset Twin, estados operacionais, deteccao de degradacao e Advisor Operacional.";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.svg`;
 
 export function canonicalUrl(pathname = "/") {
@@ -22,11 +22,11 @@ export const organizationSchema = {
 export const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "iobee V3",
-  category: "Industrial SaaS Platform",
+  name: "Iobee Operational Decision Intelligence",
+  category: "Industrial Operational Decision Intelligence Platform",
   brand: {
     "@type": "Brand",
-    name: "iobee",
+    name: "Iobee",
   },
   offers: {
     "@type": "Offer",

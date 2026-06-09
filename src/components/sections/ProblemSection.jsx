@@ -28,13 +28,13 @@ export function ProblemSection() {
   return (
     <SectionContainer className="py-14 md:py-20">
       <SectionHeading
-        eyebrow="Desafio de mercado"
-        title="O problema nao e falta de dados. E falta do dado certo na hora certa."
-        description="A iobee V3 transforma monitoramento reativo em operacao orientada por contexto, velocidade e prioridade de negocio."
+        eyebrow="O problema"
+        title="A indústria já tem dados. O que falta é contexto para decidir antes da perda."
+        description="Telas passivas mostram o retrovisor operacional. Desvio operacional tem padrao, e quase toda perda avisa antes em forma de variabilidade, instabilidade ou degradacao."
       />
       <MotionReveal className="mt-8 grid gap-4 lg:grid-cols-2">
-        <ComparisonColumn items={beforeItems} title="Antes" tone="error" />
-        <ComparisonColumn items={afterItems} title="Depois" tone="success" />
+        <ComparisonColumn items={beforeItems} title="Sem contexto" tone="error" />
+        <ComparisonColumn items={afterItems} title="Com Iobee" tone="success" />
       </MotionReveal>
     </SectionContainer>
   );

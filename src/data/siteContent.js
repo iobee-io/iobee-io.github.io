@@ -1,68 +1,66 @@
 export const navigationItems = [
   { label: "Plataforma", path: "/plataforma" },
-  { label: "Solucoes", path: "/segmentos" },
-  { label: "OEM", path: "/oem" },
   { label: "Casos de Uso", path: "/casos-de-uso" },
   { label: "Blog", path: "/blog" },
   { label: "Contato", path: "/contato" },
 ];
 
 export const metrics = [
-  { label: "Atualizacao", value: "<100ms" },
-  { label: "Disponibilidade", value: "99,9%" },
-  { label: "Arquitetura", value: "Multi-tenant real" },
-  { label: "Alertas", value: "WhatsApp + SMS + Email" },
-  { label: "Operacao", value: "Multi-planta" },
-  { label: "Modelo", value: "White-label" },
+  { label: "Mensagem central", value: "Sinais -> decisoes" },
+  { label: "Primeira oferta", value: "30 dias" },
+  { label: "Metodo inicial", value: "Baseline explicavel" },
+  { label: "Estados", value: "8 modos operacionais" },
+  { label: "Arquitetura", value: "Edge-native" },
+  { label: "Continuidade", value: "Advisor mensal" },
 ];
 
 export const beforeItems = [
-  "Planilhas descentralizadas",
-  "SCADA isolado por planta",
-  "Dashboards lentos e reativos",
-  "Sem contexto operacional",
-  "Dependencia de pessoas-chave",
-  "Alertas tardios",
+  "Sinais existem, mas chegam sem contexto operacional",
+  "Alarmes por limite ignoram estado, partida, parada e instabilidade",
+  "Variabilidade vira perda antes de ser interpretada",
+  "Historicos mostram o que ocorreu, mas nao orientam a proxima acao",
+  "Analise depende de pessoas-chave e conhecimento disperso",
+  "Relatorios executivos chegam depois do impacto operacional",
 ];
 
 export const afterItems = [
-  "Tempo real orientado a decisao",
-  "Device Twin por dispositivo",
-  "Asset Twin por sistema critico",
-  "Alertas inteligentes e escalonaveis",
-  "Multi-site com visao central",
-  "Operacao escalavel",
+  "Baseline contextual por ativo, turno, carga e estado operacional",
+  "Desvios classificados antes de virarem perda recorrente",
+  "Asset Twin conecta sinal, processo e criticidade do ativo",
+  "Advisor Operacional recomenda proximos passos explicaveis",
+  "Reunioes recorrentes priorizam estabilidade, disponibilidade e perda",
+  "Evolucao continua sem substituir PLCs, SCADA ou historiadores",
 ];
 
 export const steps = [
-  "Conecte sensores, PLCs, APIs ou gateways",
-  "Centralize dados operacionais em um unico stream",
-  "Crie ativos digitais com Device Twin e Asset Twin",
-  "Configure regras de negocio e limites operacionais",
-  "Dispare alertas multicanal com contexto",
-  "Aja mais rapido com snapshot da falha",
+  "Bees capturam sinais industriais no campo",
+  "Hive processa e conecta localmente no edge",
+  "Guard protege conectividade, acesso e operacao",
+  "HEXos organiza dados, ativos e usuarios",
+  "ICOS interpreta comportamento operacional",
+  "Advisor recomenda acoes e prioridades",
 ];
 
 export const twinCards = [
   {
     title: "Device Twin",
     description:
-      "Estado vivo de sensores, CLPs, medidores e gateways com telemetria, conectividade, saude e historico instantaneo.",
+      "Representa o estado vivo de sensores, CLPs, medidores e gateways com telemetria, conectividade, saude e historico operacional.",
     bullets: [
       "Online/offline por dispositivo",
       "Qualidade de sinal e latencia",
-      "Eventos em tempo real",
+      "Eventos operacionais relevantes",
       "Inventario tecnico centralizado",
     ],
   },
   {
     title: "Asset Twin",
     description:
-      "Contexto completo de bombas, chillers, compressores, CIP, HVAC, ETA, ETE e linhas de producao com logica operacional.",
+      "Conecta comportamento de bombas, dosagem, utilidades, ETA, ETE e processos continuos ao contexto do ativo critico.",
     bullets: [
       "Modelagem por ativo e processo",
-      "KPI operacional por contexto",
-      "Relacao causa e efeito",
+      "KPI operacional por estado",
+      "Baseline contextual e estatistico",
       "Manutencao orientada por condicao",
     ],
   },
@@ -100,7 +98,7 @@ export const scaleFeatures = [
 export const oemFeatures = [
   "Branding completo com sua identidade",
   "Subdominio proprio por cliente",
-  "Dashboards customizados por vertical",
+  "Pacotes operacionais por vertical",
   "Multi-cliente com segregacao de dados",
   "Playbook de rollout para canais",
   "Receita recorrente com servicos digitais",
@@ -111,6 +109,6 @@ export const screenshotBriefs = [
   "Painel de Asset Twin de compressor com timeline de eventos e alertas ativos.",
   "Tela de configuracao de regras com condicoes compostas e escalonamento.",
   "Visao OEM white-label com troca de marca, dominio e tenant.",
-  "Dashboard executivo com KPI de disponibilidade, energia e MTTR.",
+  "Resumo executivo com estabilidade, disponibilidade, energia e MTTR.",
   "Feed de alertas multicanal com snapshot contextual do evento.",
 ];

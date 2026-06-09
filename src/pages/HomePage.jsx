@@ -1,13 +1,14 @@
+import { AdvisorRecurringSection } from "../components/sections/AdvisorRecurringSection";
+import { DiagnosticOfferSection } from "../components/sections/DiagnosticOfferSection";
+import { EdgeArchitectureSection } from "../components/sections/EdgeArchitectureSection";
 import { FinalCTASection } from "../components/sections/FinalCTASection";
 import { HeroSection } from "../components/sections/HeroSection";
-import { HowItWorksSection } from "../components/sections/HowItWorksSection";
+import { IndustrialUseCasesSection } from "../components/sections/IndustrialUseCasesSection";
 import { MetricsStrip } from "../components/sections/MetricsStrip";
-import { OemSection } from "../components/sections/OemSection";
 import { ProblemSection } from "../components/sections/ProblemSection";
-import { ScaleSection } from "../components/sections/ScaleSection";
-import { SegmentsSection } from "../components/sections/SegmentsSection";
-import { SmartAlertsSection } from "../components/sections/SmartAlertsSection";
-import { TwinSection } from "../components/sections/TwinSection";
+import { ScadaComplementSection } from "../components/sections/ScadaComplementSection";
+import { SecurityGuardSection } from "../components/sections/SecurityGuardSection";
+import { WhatIobeeDoesSection } from "../components/sections/WhatIobeeDoesSection";
 import { PageSeo } from "../components/seo/PageSeo";
 import { organizationSchema, productSchema } from "../lib/siteConfig";
 
@@ -17,26 +18,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "A iobee V3 funciona em tempo real?",
+      name: "O que e o Diagnostico Operacional Iobee de 30 dias?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sim. A plataforma entrega monitoramento em tempo real com atualizacao em baixa latencia e alertas multicanal.",
+        text: "E uma oferta inicial para conectar sinais criticos, criar baseline operacional, classificar estados, detectar instabilidade e entregar recomendacoes executivas iniciais.",
       },
     },
     {
       "@type": "Question",
-      name: "Qual a diferenca entre Device Twin e Asset Twin?",
+      name: "A Iobee substitui PLC, SCADA ou historiador?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Device Twin representa o estado vivo de dispositivos e sensores. Asset Twin conecta esse estado ao contexto operacional dos ativos industriais.",
+        text: "Nao. A Iobee complementa PLCs, SCADA e historiadores existentes com contexto operacional, baseline, classificacao de estados e Advisor Operacional.",
       },
     },
     {
       "@type": "Question",
-      name: "A plataforma suporta multi-tenant e white-label?",
+      name: "A Iobee depende de inteligencia artificial avancada desde o inicio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sim. A iobee V3 foi desenhada para operacao multi-tenant com isolamento de dados e suporte a modelos OEM white-label.",
+        text: "Nao. A Iobee comeca com baseline contextual, estatisticas e regras explicaveis para gerar valor inicial antes de modelos avancados.",
       },
     },
   ],
@@ -46,20 +47,21 @@ export default function HomePage() {
   return (
     <>
       <PageSeo
-        description="Monitoramento industrial em tempo real com Device Twin, Asset Twin, alertas inteligentes e escala multi-planta."
+        description="Operational Decision Intelligence industrial edge-native para baseline contextual, Asset Twin, estados operacionais, deteccao de degradacao e Advisor Operacional recorrente."
         path="/"
         schema={[organizationSchema, productSchema, faqSchema]}
-        title="Plataforma SaaS Industrial em Tempo Real"
+        title="Operational Decision Intelligence Industrial"
       />
       <HeroSection />
       <MetricsStrip />
       <ProblemSection />
-      <HowItWorksSection />
-      <TwinSection />
-      <SegmentsSection />
-      <OemSection />
-      <SmartAlertsSection />
-      <ScaleSection />
+      <WhatIobeeDoesSection />
+      <DiagnosticOfferSection />
+      <AdvisorRecurringSection />
+      <IndustrialUseCasesSection />
+      <EdgeArchitectureSection />
+      <SecurityGuardSection />
+      <ScadaComplementSection />
       <FinalCTASection />
     </>
   );

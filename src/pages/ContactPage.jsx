@@ -9,14 +9,14 @@ const WHATSAPP_URL = "https://wa.me/5519988148242";
 const LEADS_ENDPOINT = import.meta.env.VITE_LEADS_ENDPOINT || "/api/leads";
 
 const segments = [
-  "Industria",
-  "HVAC",
-  "Utilities",
-  "Agronegocio",
-  "OEM",
-  "Facilities",
-  "Agua e saneamento",
-  "Alimentos e bebidas",
+  "Papel e celulose",
+  "Quimico",
+  "Utilidades industriais",
+  "Saneamento",
+  "Dosagem quimica",
+  "ETA / ETE",
+  "Bombas e motores",
+  "Operacao continua",
   "Outro",
 ];
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
 
   const contacts = [
     { title: "Email", value: "comercial@iobee.io", icon: AtSymbolIcon, href: "mailto:comercial@iobee.io" },
-    { title: "WhatsApp", value: "(19) 98814-8242", icon: PhoneIcon, href: WHATSAPP_URL },
+    { title: "WhatsApp", value: "(19)98814-8242", icon: PhoneIcon, href: WHATSAPP_URL },
     { title: "Comercial", value: "Sao Paulo + atendimento nacional", icon: BuildingOffice2Icon, href: null },
   ];
 
@@ -98,20 +98,20 @@ export default function ContactPage() {
     <SectionContainer className="py-16 md:py-24">
       <PageSeo
         breadcrumbs={[{ name: "Home", path: "/" }, ...breadcrumbItems]}
-        description="Fale com um especialista da iobee para agendar uma demonstracao da plataforma SaaS industrial V3."
+        description="Fale com um especialista da Iobee para agendar um diagnostico operacional de 30 dias com baseline contextual, estados operacionais e recomendacoes iniciais."
         path="/contato"
-        title="Contato e Demonstracao"
+        title="Agendar Diagnóstico Operacional"
       />
       <Breadcrumbs items={breadcrumbItems} />
 
       <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-start">
         <div>
           <p className="mb-5 inline-flex rounded-full border border-primary/35 bg-primary/12 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-            Contato
+            Diagnóstico operacional
           </p>
-          <h1 className="section-title font-display text-4xl font-semibold md:text-5xl">Agende uma demonstracao da iobee V3</h1>
+          <h1 className="section-title font-display text-4xl font-semibold md:text-5xl">Agende um diagnóstico operacional de 30 dias</h1>
           <p className="mt-5 max-w-xl text-base text-base-content/75 md:text-lg">
-            Vamos mapear sua operacao atual, identificar gargalos e desenhar um plano de rollout por planta e prioridade.
+            Vamos mapear sinais criticos, variabilidade, baseline e estados operacionais para identificar onde a operacao ja avisa antes de virar perda.
           </p>
 
           <div className="mt-8 space-y-3">
@@ -206,7 +206,7 @@ export default function ContactPage() {
             </label>
 
             <label className="form-control w-full">
-              <span className="label-text mb-2 text-sm">Segmento</span>
+              <span className="label-text mb-2 text-sm">Segmento ou processo crítico</span>
               <select className="select select-bordered w-full" name="segment" onChange={handleFieldChange} required value={form.segment}>
                 <option value="">Selecione</option>
                 {segments.map((segment) => (
@@ -218,7 +218,7 @@ export default function ContactPage() {
             </label>
 
             <label className="form-control w-full">
-              <span className="label-text mb-2 text-sm">Quantidade aproximada de ativos</span>
+              <span className="label-text mb-2 text-sm">Quantidade aproximada de ativos ou sinais</span>
               <select className="select select-bordered w-full" name="assetCount" onChange={handleFieldChange} required value={form.assetCount}>
                 <option value="">Selecione</option>
                 {assetRanges.map((range) => (
@@ -235,14 +235,14 @@ export default function ContactPage() {
                 className="textarea textarea-bordered h-28 w-full"
                 name="message"
                 onChange={handleFieldChange}
-                placeholder="Conte em poucas linhas seu desafio operacional"
+                placeholder="Conte quais ativos, sinais ou perdas operacionais voce quer diagnosticar"
                 required
                 value={form.message}
               />
             </label>
 
             <button aria-label="Enviar formulario de contato" className="btn btn-primary w-full" disabled={status === "loading"} type="submit">
-              {status === "loading" ? "Enviando..." : "Agendar demonstracao"}
+              {status === "loading" ? "Enviando..." : "Agendar diagnóstico operacional"}
             </button>
 
             {feedback ? (

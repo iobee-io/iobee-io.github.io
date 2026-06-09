@@ -5,14 +5,14 @@ export default function UseCasesPage() {
     <SimplePageTemplate
       badge="Casos de Uso"
       bullets={[
-        "Deteccao antecipada de anomalias em compressores e bombas.",
-        "Gestao de energia com alertas por desvio de consumo.",
-        "Acompanhamento de uptime, MTTR e performance por planta.",
-        "Padronizacao operacional para multiplos sites.",
+        "Deteccao de degradacao em bombas, motores e sistemas de dosagem.",
+        "Baseline contextual para utilidades, energia, ar comprimido e vapor.",
+        "Classificacao de estados em ETA, ETE e processos continuos.",
+        "Identificacao de padroes recorrentes de instabilidade operacional.",
       ]}
-      description="Monte uma biblioteca de casos de uso com resultados concretos, tempo de implantacao e impacto financeiro."
+      description="Casos de uso focados em perda, variabilidade, estabilidade, disponibilidade e decisao operacional antes que o desvio vire impacto."
       path="/casos-de-uso"
-      title="Resultados Reais em Operacoes Industriais"
+      title="Casos de uso para Operational Decision Intelligence"
     />
   );
 }

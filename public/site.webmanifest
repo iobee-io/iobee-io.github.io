@@ -1,7 +1,7 @@
 {
-  "name": "iobee V3",
+  "name": "Iobee",
   "short_name": "iobee",
-  "description": "Plataforma SaaS industrial para monitoramento em tempo real e Digital Twin.",
+  "description": "Operational Decision Intelligence industrial para baseline contextual, Asset Twin e Advisor Operacional.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f1728",

@@ -1,10 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0F1728"/>
-  <rect x="40" y="40" width="1120" height="550" rx="26" fill="#172344" stroke="#2D3F74"/>
-  <circle cx="150" cy="130" r="60" fill="#5C77FF" fill-opacity="0.35"/>
-  <circle cx="1080" cy="520" r="84" fill="#78E0BC" fill-opacity="0.28"/>
-  <text x="90" y="255" fill="#EAF0FF" font-size="72" font-family="Arial, sans-serif" font-weight="700">iobee V3</text>
-  <text x="90" y="330" fill="#AFC2FF" font-size="38" font-family="Arial, sans-serif">Plataforma SaaS Industrial em Tempo Real</text>
-  <rect x="90" y="388" width="260" height="56" rx="14" fill="#5C77FF"/>
-  <text x="118" y="426" fill="#F3F7FF" font-size="26" font-family="Arial, sans-serif">Agendar demo</text>
+  <rect width="1200" height="630" fill="#070D18"/>
+  <rect x="48" y="44" width="1104" height="542" rx="30" fill="#101A2F" stroke="#244B7A"/>
+  <path d="M105 108H1095" stroke="#173A60" stroke-width="1"/>
+  <path d="M105 522H1095" stroke="#173A60" stroke-width="1"/>
+  <path d="M860 130L1015 220V400L860 490L705 400V220L860 130Z" stroke="#27A8FF" stroke-width="6" stroke-linecap="round" stroke-dasharray="300 44"/>
+  <path d="M725 398C775 320 825 374 875 292C925 210 960 250 1008 178" stroke="#3FE681" stroke-width="7" stroke-linecap="round"/>
+  <path d="M725 452C780 356 820 428 880 344C930 274 970 310 1018 244" stroke="#F7C948" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <circle cx="880" cy="344" r="10" fill="#F7C948"/>
+  <circle cx="967" cy="309" r="10" fill="#FF8A3D"/>
+  <text x="96" y="170" fill="#EAF6FF" font-size="72" font-family="Arial, sans-serif" font-weight="700">iobee</text>
+  <text x="96" y="250" fill="#EAF6FF" font-size="54" font-family="Arial, sans-serif" font-weight="700">Sinais industriais em</text>
+  <text x="96" y="315" fill="#26C6FF" font-size="54" font-family="Arial, sans-serif" font-weight="700">decisoes operacionais</text>
+  <text x="98" y="374" fill="#AFC8E8" font-size="28" font-family="Arial, sans-serif">Operational Decision Intelligence industrial edge-native</text>
+  <rect x="96" y="420" width="356" height="62" rx="16" fill="#1379D8"/>
+  <text x="122" y="460" fill="#F4FAFF" font-size="27" font-family="Arial, sans-serif" font-weight="700">Diagnostico de 30 dias</text>
+  <rect x="480" y="420" width="265" height="62" rx="16" fill="#12253B" stroke="#2E5C89"/>
+  <text x="506" y="460" fill="#D9EAFF" font-size="26" font-family="Arial, sans-serif">Advisor recorrente</text>
 </svg>

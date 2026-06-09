@@ -30,7 +30,7 @@
   <rect x="38" y="28" width="1844" height="804" rx="28" fill="#0E1C33" stroke="#2D466E" />
 
   <text x="108" y="110" fill="#E2EBFF" font-family="Space Grotesk, Arial" font-size="46">Arquitetura unica da iobee</text>
-  <text x="108" y="154" fill="#A8BCDF" font-family="IBM Plex Sans, Arial" font-size="23">Bees capturam no campo, Pollen transporta sinais, Hive orquestra e ICOS gera inteligencia operacional.</text>
+  <text x="108" y="154" fill="#A8BCDF" font-family="IBM Plex Sans, Arial" font-size="23">Bees capturam no campo, Hive processa no edge, HEXos organiza, ICOS interpreta e Advisor recomenda.</text>
   <text x="108" y="184" fill="#92E6D1" font-family="IBM Plex Sans, Arial" font-size="18">Guard atua de forma transversal protegendo todas as camadas.</text>
 
   <g>
@@ -60,7 +60,7 @@
   <g>
     <rect x="250" y="628" width="1308" height="86" rx="16" fill="url(#layerField)" stroke="#5F83BD" />
     <text x="286" y="662" fill="#AFC6FF" font-family="IBM Plex Sans, Arial" font-size="16" letter-spacing="2">FIELD LAYER</text>
-    <text x="286" y="694" fill="#DFEAFF" font-family="IBM Plex Sans, Arial" font-size="21">Bees + Pollen na origem: Sensores | CLPs | Maquinas | Inversores | Medidores | IoT | Edge gateways</text>
+    <text x="286" y="694" fill="#DFEAFF" font-family="IBM Plex Sans, Arial" font-size="21">Campo + Bees na origem: Sensores | CLPs | Maquinas | Inversores | Medidores | Edge gateways</text>
   </g>
 
   <g stroke="#81B6F7" stroke-width="2.8" stroke-linecap="round" opacity="0.94">

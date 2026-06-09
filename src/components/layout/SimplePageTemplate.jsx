@@ -36,10 +36,10 @@ export function SimplePageTemplate({ badge, title, description, bullets = [], pa
       <div className="mt-10 flex flex-col gap-3 sm:flex-row">
         <Link
           className="btn btn-primary"
-          onClick={() => trackEvent("cta_agendar_demonstracao_click", { context: "inner_page" })}
+          onClick={() => trackEvent("cta_agendar_diagnostico_click", { context: "inner_page" })}
           to="/contato"
         >
-          Agendar demonstracao
+          Agendar diagnóstico operacional
         </Link>
         <Link className="btn btn-outline" to="/">
           Voltar para home

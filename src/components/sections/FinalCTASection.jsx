@@ -12,17 +12,20 @@ export function FinalCTASection() {
           <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-secondary/20 blur-2xl" />
 
           <div className="relative max-w-4xl">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary-content/85">Pronto para escalar</p>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary-content/85">Proximo passo</p>
             <h2 className="section-title font-display text-3xl font-semibold text-primary-content md:text-5xl">
-              O proximo problema da sua operacao ja esta acontecendo agora. A diferenca e se voce vai descobrir antes ou depois.
+              Agende um diagnóstico operacional de 30 dias.
             </h2>
+            <p className="mt-5 max-w-2xl text-base text-primary-content/80 md:text-lg">
+              Veja onde sua operacao ja sinaliza instabilidade, degradacao e perda recorrente antes de investir em modelos mais complexos.
+            </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 className="btn btn-neutral"
-                onClick={() => trackEvent("cta_agendar_demonstracao_click", { context: "final_cta" })}
+                onClick={() => trackEvent("cta_agendar_diagnostico_click", { context: "final_cta" })}
                 to="/contato"
               >
-                Agendar demonstracao
+                Agendar diagnóstico operacional
               </Link>
               <Link
                 className="btn btn-outline border-primary-content/30 text-primary-content hover:bg-primary-content/10"
